@@ -19,6 +19,10 @@
 		08BA91BF198BBF75000DA31B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BA91A7198BBF74000DA31B /* UIKit.framework */; };
 		08BA91C7198BBF75000DA31B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08BA91C5198BBF75000DA31B /* InfoPlist.strings */; };
 		08BA91C9198BBF75000DA31B /* AsyncServerConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BA91C8198BBF75000DA31B /* AsyncServerConnectionTests.m */; };
+		08BA91D4198BBFBC000DA31B /* GzConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BA91D3198BBFBC000DA31B /* GzConnection.m */; };
+		08BA91D7198BC161000DA31B /* GzSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BA91D6198BC161000DA31B /* GzSplashViewController.m */; };
+		08BA91DA198BC17B000DA31B /* GzMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BA91D9198BC17B000DA31B /* GzMainViewController.m */; };
+		08BA91DD198BC206000DA31B /* GzAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BA91DC198BC206000DA31B /* GzAlbum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,14 @@
 		08BA91C4198BBF75000DA31B /* AsyncServerConnectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AsyncServerConnectionTests-Info.plist"; sourceTree = "<group>"; };
 		08BA91C6198BBF75000DA31B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08BA91C8198BBF75000DA31B /* AsyncServerConnectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncServerConnectionTests.m; sourceTree = "<group>"; };
+		08BA91D2198BBFBC000DA31B /* GzConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GzConnection.h; sourceTree = "<group>"; };
+		08BA91D3198BBFBC000DA31B /* GzConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GzConnection.m; sourceTree = "<group>"; };
+		08BA91D5198BC161000DA31B /* GzSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GzSplashViewController.h; sourceTree = "<group>"; };
+		08BA91D6198BC161000DA31B /* GzSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GzSplashViewController.m; sourceTree = "<group>"; };
+		08BA91D8198BC17B000DA31B /* GzMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GzMainViewController.h; sourceTree = "<group>"; };
+		08BA91D9198BC17B000DA31B /* GzMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GzMainViewController.m; sourceTree = "<group>"; };
+		08BA91DB198BC206000DA31B /* GzAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GzAlbum.h; sourceTree = "<group>"; };
+		08BA91DC198BC206000DA31B /* GzAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GzAlbum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,14 @@
 		08BA91A9198BBF74000DA31B /* AsyncServerConnection */ = {
 			isa = PBXGroup;
 			children = (
+				08BA91DB198BC206000DA31B /* GzAlbum.h */,
+				08BA91DC198BC206000DA31B /* GzAlbum.m */,
+				08BA91D8198BC17B000DA31B /* GzMainViewController.h */,
+				08BA91D9198BC17B000DA31B /* GzMainViewController.m */,
+				08BA91D5198BC161000DA31B /* GzSplashViewController.h */,
+				08BA91D6198BC161000DA31B /* GzSplashViewController.m */,
+				08BA91D2198BBFBC000DA31B /* GzConnection.h */,
+				08BA91D3198BBFBC000DA31B /* GzConnection.m */,
 				08BA91B2198BBF74000DA31B /* GzAppDelegate.h */,
 				08BA91B3198BBF74000DA31B /* GzAppDelegate.m */,
 				08BA91B5198BBF74000DA31B /* Images.xcassets */,
@@ -242,6 +262,10 @@
 			files = (
 				08BA91B0198BBF74000DA31B /* main.m in Sources */,
 				08BA91B4198BBF74000DA31B /* GzAppDelegate.m in Sources */,
+				08BA91D7198BC161000DA31B /* GzSplashViewController.m in Sources */,
+				08BA91DA198BC17B000DA31B /* GzMainViewController.m in Sources */,
+				08BA91DD198BC206000DA31B /* GzAlbum.m in Sources */,
+				08BA91D4198BBFBC000DA31B /* GzConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

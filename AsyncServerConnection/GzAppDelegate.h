@@ -11,5 +11,6 @@
 @interface GzAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong) UINavigationController *nav;
 
 @end

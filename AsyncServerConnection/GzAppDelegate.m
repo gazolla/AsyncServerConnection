@@ -7,16 +7,39 @@
 //
 
 #import "GzAppDelegate.h"
+#import "GzConnection.h"
+#import "GzSplashViewController.h"
+#import "GzMainViewController.h"
+#import "GzAlbum.h"
 
 @implementation GzAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(serverDataReceived:) name:@"serverDataReceived" object:nil];
+   
+    GzConnection *connection = [[GzConnection alloc] init];
+    [connection connect];
+    
+    GzSplashViewController *splash = [[GzSplashViewController alloc] init];
+    self.nav = [[UINavigationController alloc] initWithRootViewController:splash];
+    
+    self.window.rootViewController = self.nav;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+-(void)serverDataReceived:(NSNotification *)notification{
+    GzConnection *connection = [notification object];
+    
+    GzMainViewController *main = [[GzMainViewController alloc] init];
+    main.albuns = connection.albuns;
+    
+    
+    [self.nav pushViewController:main animated:YES];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
